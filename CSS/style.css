@@ -46,7 +46,7 @@
     box-shadow: var(--shadow-black);
     padding: 2px;
     color: var(--orange-color);
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 5px;
     animation: zigzag 1s ease infinite alternate;
