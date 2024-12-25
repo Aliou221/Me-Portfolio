@@ -966,7 +966,7 @@ textarea{
     gap: 20px;
 }
 
-input[type="submit"],
+button[type="submit"],
 input[type="reset"]{
     border: none;
     padding: 12px 20px;
@@ -981,12 +981,12 @@ input[type="reset"]{
 input[type="reset"]{
     background-color: var(--white-color);
 }
-input[type="submit"]{
+button[type="submit"]{
     background-color: var(--orange-color);
     color: var(--white-color);
 }
 
-input[type="submit"]:hover,
+button[type="submit"]:hover,
 input[type="reset"]:hover{  opacity: .8;
     opacity: .8;
 }
