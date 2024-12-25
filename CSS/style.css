@@ -966,7 +966,7 @@ textarea{
     gap: 20px;
 }
 
-button[type="submit"],
+.button-sumbit,
 input[type="reset"]{
     border: none;
     padding: 12px 20px;
@@ -981,12 +981,12 @@ input[type="reset"]{
 input[type="reset"]{
     background-color: var(--white-color);
 }
-button[type="submit"]{
+.button-sumbit{
     background-color: var(--orange-color);
     color: var(--white-color);
 }
 
-button[type="submit"]:hover,
+.button-sumbit:hover,
 input[type="reset"]:hover{  opacity: .8;
     opacity: .8;
 }
