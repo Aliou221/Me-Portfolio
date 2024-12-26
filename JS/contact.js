@@ -23,7 +23,7 @@ form.addEventListener("submit",(e)=>{
         
         Swal.fire({
             title: "Merci!",
-            text: "Votre message a ete soumis avec succee!",
+            text: "votre formulaire a été soumis avec succès !",
             icon: "success"
         });
 
