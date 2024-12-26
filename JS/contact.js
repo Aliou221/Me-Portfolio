@@ -41,7 +41,7 @@ form.addEventListener("submit",(e)=>{
         document.querySelector(".mailVerif").innerHTML = "Veuillez saisir un e.mail valide"
         mail.classList.add("error-mess")
 
-        mail.addEventListener("keypress", ()=>{
+        mail.addEventListener("keydown", ()=>{
             document.querySelector(".mailVerif").style.display = "none"
             document.querySelector(".mailVerif").innerHTML = ""
             mail.classList.remove("error-mess")
@@ -56,7 +56,7 @@ form.addEventListener("submit",(e)=>{
                 mesErr[index].style.display = "block"
                 input.classList.add("error-mess")
     
-                input.addEventListener("keypress", ()=>{
+                input.addEventListener("keydown", ()=>{
                     mesErr[index].style.display = "none"
                     input.classList.remove("error-mess")
                 })
