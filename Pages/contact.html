@@ -42,35 +42,40 @@
 
                     <div class="grid">
                         <div class="blogs not-animate card">                        
-                            <form  target="_blank" action="https://formsubmit.co/c20b52f120b9c440cb01431551fabf1f" method="POST">
-                                <input type="hidden" name="_next" value="https://aliou221.github.io/Me-Portfolio/Pages/merci.html">
+                            <form id="my_form"  target="_blank" action="https://formsubmit.co/c20b52f120b9c440cb01431551fabf1f" method="POST">
+                                <input type="hidden" name="_next" value="https://aliou221.github.io/Me-Portfolio/Pages/contact.html">
                                 <div class="flex">
                                     <div class="label-input">
                                         <label for="first_name">Prénom (s)<sup>*</sup></label>
-                                        <input type="text" id="first_name" placeholder="Votre prenom" required autocomplete="off" name="first_name" pattern="[a-zA-Z]{3,28}">
+                                        <input type="text" id="first_name" placeholder="Votre prenom" class="input-value" autocomplete="off" name="first_name" pattern="[a-zA-Z]{3,28}">
+                                        <p class="text-error">Le champ prénom est obligatoire.</p>
                                     </div>
             
                                     <div class="label-input">
                                         <label for="last_name">Nom<sup>*</sup></label>
-                                        <input type="text" id="last_name" name="last_name" placeholder="Votre nom" autocomplete="off" required pattern="[a-zA-Z]{3,20}">
+                                        <input type="text" id="last_name" name="last_name" placeholder="Votre nom" autocomplete="off" class="input-value" pattern="[a-zA-Z]{2,20}">
+                                        <p class="text-error">Le champ nom est obligatoire.</p>
                                     </div>
                                 </div>
         
                                 <div class="flex">
                                     <div class="label-input">
                                         <label for="mail">E.mail<sup>*</sup></label>
-                                        <input type="email" id="mail" name="mail" required autocomplete="off" placeholder="Votre e.mail">
+                                        <input type="email" id="mail" name="mail" autocomplete="off" class="input-value" placeholder="Votre e.mail">
+                                        <p class="text-error mailVerif">Le champ e.mail est obligatoire.</p>
                                     </div>
             
                                     <div class="label-input">
                                         <label for="phone">Téléphone<sup>*</sup></label>
-                                        <input type="tel" pattern="(70|75|76|77|78|)[0-9]{7}" id="phone" name="phone" required autocomplete="off" placeholder="7X XXX XX XX">
+                                        <input type="tel" pattern="(70|75|76|77|78|)[0-9]{7}" id="phone" class="input-value" name="phone" autocomplete="off" placeholder="7X XXX XX XX">
+                                        <p class="text-error">Le champ téléphone est obligatoire.</p>
                                     </div>
                                 </div>
         
                                 <div class="label-input">
                                     <label for="message">Message<sup>*</sup></label>
-                                    <textarea name="message" placeholder="Votre message" required id="message"></textarea>
+                                    <textarea name="message" placeholder="Votre message" class="input-value" id="message"></textarea>
+                                    <p class="text-error">Le champ message est obligatoire.</p>
                                 </div>
         
                                 <div id="btn-form">
@@ -144,5 +149,6 @@
     </footer>
 
     <script src="../JS/menue.js"></script>
+    <script src="../JS/contact.js"></script>
 </body>
 </html>
