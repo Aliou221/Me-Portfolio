@@ -164,7 +164,7 @@ nav ul li a:hover{
     transition: .3s ease;
 }
 
-#active{
+.active{
     color: var(--orange-color);
 }
 
