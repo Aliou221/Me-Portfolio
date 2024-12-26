@@ -378,8 +378,6 @@ nav ul li a:hover::before{
     width: 100%;
 }
 
-
-
 .links{
     display: flex;
     align-items: center;
@@ -975,7 +973,21 @@ input[type="reset"]{
     max-width: 100%;
     flex: 1;
     cursor: pointer;
+}
 
+p.text-error{
+    color: var(--orange-color) !important;
+    display: none;
+}
+
+#my_form .flex{
+    align-items: flex-start;
+}
+
+input.error-mess,
+textarea.error-mess{
+    border: 2px solid var(--orange-color);
+    outline-color: var(--orange-color) ;
 }
 
 input[type="reset"]{
