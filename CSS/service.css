@@ -76,34 +76,80 @@ header{
 .creations{
     margin-top: 20px;
 }
+
 .grid-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    column-count: 4;
+    position: relative;
+    text-align: center;
 }
 
 .card-grid-container{
-    max-width: 10%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    animation: scrolTop .5s .5s ease forwards;
+    opacity: 0;
+    animation-timeline: view();
+    animation-range: 0% cover 20%;
+    transition: opacity .4s ease , transform .4s ease;
+}
+
+.card-grid-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    overflow: hidden;
+}
+
+
+.card-grid-container:hover img{
+    scale: 1.1;
+    transition: .4s ease;
 }
 
 .card-grid-container img{
     width: 100%;
+    pointer-events: none;
+    user-select: none;
 }
 
-.card-grid-container:ho{
-    max-width: 100%;
+.img-none{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s ease , visibility .4s ease;
 }
+
+.img-visible{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s ease , visibility .4s ease;
+}
+
+.btn-img{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background: var(--bg-nav);
+    color: var(--orange-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow-black);
+}
+
+
 
 p{
     color: #ccc;
 }
 
-.card-grid-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .adsl,.fibre{
     flex: 1;
