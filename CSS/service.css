@@ -144,7 +144,10 @@ header{
     box-shadow: var(--shadow-black);
 }
 
-
+.btn-img:hover{
+    background-color: var(--white-color);
+    transition: .4s ease;
+}
 
 p{
     color: #ccc;
