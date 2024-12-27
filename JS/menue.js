@@ -28,6 +28,24 @@ menu.addEventListener("click", (e)=>{
 
 })
 
+let navLinks = document.querySelectorAll("nav ul li a");
+
+navLinks.forEach(link =>{
+    link.addEventListener("click",()=>{
+        
+        navigation.classList.remove("nav-active"); 
+
+        barHaut.style.transform = "translateY(-9px)"
+        barHaut.style.top = ""
+
+        barMi.style.opacity = "1"
+        
+        barBas.style.transform = "translateY(9px)"
+        barBas.style.top = ""
+
+    })
+})
+
 //Chargement de notre page
 
 let loading = document.querySelector(".loading")
