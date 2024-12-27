@@ -670,6 +670,7 @@ figure:hover{
     border: 1px solid #fff;
     border-radius: 50%;
     box-shadow: var(--shadow-black);
+    transition: .4s ease;
 }
 
 
