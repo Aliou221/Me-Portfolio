@@ -35,14 +35,32 @@ let myArrows = document.querySelectorAll(".my-arrow");
 let myGridParag = document.querySelectorAll(".grid-parag")
 
 
-myArrows.forEach((arrow, index) =>{
-    arrow.addEventListener("click", ()=>{
+myArrows.forEach((arrow, index) =>{ 
+    
+    arrow.addEventListener("click", ()=>{ 
 
-        myGridParag[index].classList.toggle("grid-row-visible")
-        myGridParag[index].style.height = `${myGridParag[index].scrollHeight}px`
-        
-        if(!myGridParag[index].classList.contains("grid-row-visible")){
-            myGridParag[index].style.height = `0px`
-        }
+        myGridParag.forEach((parag,i) =>{
+
+            if(i === index){ 
+
+                parag.classList.toggle("grid-row-visible")
+
+                if(parag.classList.contains("grid-row-visible")){
+                    parag.style.height =`${myGridParag[index].scrollHeight}px`
+                    myArrows[i].style.transform = "rotate(180deg)"
+                }else{
+                    parag.style.height =`0px`
+                    myArrows[i].style.transform = "rotate(0deg)"
+                }
+
+            }else{
+                parag.classList.remove("grid-row-visible")
+                parag.style.height = `0px`
+                myArrows[i].style.transform = "rotate(0deg)"
+            }
+            
+        })
+                
     })
 })
+
