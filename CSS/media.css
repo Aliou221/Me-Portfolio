@@ -89,6 +89,7 @@
 }
 
 @media (max-width:1005px){
+
     .left_container{
         width: 60%;
         flex: none;
@@ -124,7 +125,10 @@
     }
 }
 
+
+
 @media (max-width:870px){
+
     .propos .grid{
         flex-direction: column;
     }
@@ -162,6 +166,10 @@
 }
 
 @media (max-width:700px){
+    .grid-container {
+        column-count: 3 !important;
+    }
+
     .contact .grid{
         flex-direction: column;
     }
@@ -189,6 +197,10 @@
 
 @media (max-width:520px){
 
+    .grid-container {
+        column-count: 2 !important;
+    }
+
     .img-profile h2 {
         font-size: 1.2rem;
     }
@@ -199,10 +211,13 @@
 }
 
 @media (max-width:420px){
-    .blog-presentation h2 {
-        font-size: 20px;
+    .grid-container {
+        column-count: 1 !important;
     }
 
+    .blog-presentation h2{
+        font-size: 20px;
+    }
     .contact .flex{
         flex-direction: column;
     }
