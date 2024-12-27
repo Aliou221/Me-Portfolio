@@ -17,7 +17,7 @@ let cont = 0;
 btnImg.onclick = function(){
 
 
-    if(cont <= 3){
+    if(cont < 3){
 
         imgNones.forEach((img,i) =>{
 
@@ -34,13 +34,7 @@ btnImg.onclick = function(){
             }
 
             if(cont === 2){
-                if(i>=10 && i < 15){
-                    img.classList.add("img-visible")
-                }
-            }
-
-            if(cont === 3){
-                if(i>=15 && i < 17){
+                if(i>=10 && i < 17){
                     btnImg.innerText = "Voir moins"
                     img.classList.add("img-visible")
                 }
@@ -58,7 +52,7 @@ btnImg.onclick = function(){
 
             imgNones.forEach((img,i) =>{
     
-                if(i>=0 && i < 19){
+                if(i>=0 && i < 17){
                     
                     btnImg.innerText = "Voir plus"
                     img.classList.remove("img-visible")
