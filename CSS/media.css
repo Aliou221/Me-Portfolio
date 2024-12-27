@@ -199,6 +199,10 @@
 }
 
 @media (max-width:420px){
+    .blog-presentation h2 {
+        font-size: 20px;
+    }
+
     .contact .flex{
         flex-direction: column;
     }
