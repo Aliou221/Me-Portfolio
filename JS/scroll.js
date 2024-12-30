@@ -1,14 +1,14 @@
-let section = document.querySelectorAll("section"); 
+let sections = document.querySelectorAll("section"); 
 let navlinks = document.querySelectorAll("nav ul li a")
 
 window.addEventListener("scroll", ()=>{ 
     
-    section.forEach(sec =>{ 
+    sections.forEach(section =>{ 
 
         let tete = window.scrollY; 
-        let hauteur = sec.offsetHeight; 
-        let pos_section = sec.offsetTop - 150; 
-        let id = sec.getAttribute("id");  
+        let hauteur = section.offsetHeight; 
+        let pos_section = section.offsetTop - 150; 
+        let id = section.getAttribute("id");  
 
 
         if(tete >= pos_section && tete < pos_section + hauteur){ 
