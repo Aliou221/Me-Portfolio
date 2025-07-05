@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio | Contact</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+    <link rel="shortcut icon" href="../images/logo/Ac.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="loading"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+                <a href="#" class="logo">Mon Portfolio<span class="orange">.</span></a>
+                <ul>
+                    <li><a href="../index.html" id="active">Accueil</a></li>
+                    <li><a href="../index.html#propos">A propos</a></li>
+                    <li><a href="../index.html#competences">Compétences</a></li>
+                    <li><a href="../index.html#realisations">Réalisations</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="section-contact">
+        <div class="container">
+                <h1 class="h1-contact">contactez-moi!</h1>
+                <p>Je suis toujours à la recherche de nouvelles opportunités d'apprentissage et de collaboration. Si vous êtes intéressé par mes compétences ou si vous avez un projet en tête, n'hésitez pas à me contacter.</p>
+                <div class="contact">
+
+                    <div class="grid">
+                        <div class="blogs not-animate card">                        
+                            
+                            <form id="my_form">
+                                <div class="flex">
+                                    <div class="label-input">
+                                        <label for="first_name">Prénom (s)<sup>*</sup></label>
+                                        <input type="text" id="first_name" placeholder="Votre prenom" autocomplete="off" name="first_name" class="input-value" pattern="[a-zA-Z]{3,28}">
+                                        <p class="text-error">Le champ prénom est obligatoire.</p>
+                                    </div>
+            
+                                    <div class="label-input">
+                                        <label for="last_name">Nom<sup>*</sup></label>
+                                        <input type="text" id="last_name" name="last_name" placeholder="Votre nom" autocomplete="off" class="input-value" pattern="[a-zA-Z]{2,20}">
+                                        <p class="text-error">Le champ nom est obligatoire.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="flex">
+                                    <div class="label-input">
+                                        <label for="mail">E.mail<sup>*</sup></label>
+                                        <input type="email" id="mail" name="mail" autocomplete="off" class="input-value" placeholder="Votre e.mail">
+                                        <p class="text-error mailVerif">Le champ e.mail est obligatoire.</p>
+                                    </div>
+            
+                                    <div class="label-input">
+                                        <label for="phone">Téléphone<sup>*</sup></label>
+                                        <input  type="tel" pattern="(70|75|76|77|78|)[0-9]{7}" id="phone" name="phone" autocomplete="off" class="input-value" placeholder="7X XXX XX XX">
+                                        <p class="text-error">Le champ téléphone est obligatoire.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="label-input">
+                                    <label for="message">Message<sup>*</sup></label>
+                                    <textarea name="message" placeholder="Votre message" class="input-value" id="message"></textarea>
+                                    <p class="text-error">Le champ message est obligatoire.</p>
+                                </div>
+        
+                                <div id="btn-form">
+                                    <input type="submit" value="Envoyer">
+                                    <input type="reset" value="Réinitialiser">
+                                </div>
+
+                                <input type="hidden" name="_captcha" value="false">
+
+                            </form>
+                        </div>
+
+                        <div class="flex-column not-animate blogs">
+                            
+                            <div class="col not-animate  card">
+                                <h1>Email</h1>
+                                <a href="mailto:cissealiou378@gmail.com">
+                                    <div class="svg">
+                                        <svg width="28" height="28" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="8-Email" id="_8-Email"><path d="M45,7H3a3,3,0,0,0-3,3V38a3,3,0,0,0,3,3H45a3,3,0,0,0,3-3V10A3,3,0,0,0,45,7Zm-.64,2L24,24.74,3.64,9ZM2,37.59V10.26L17.41,22.17ZM3.41,39,19,23.41l4.38,3.39a1,1,0,0,0,1.22,0L29,23.41,44.59,39ZM46,37.59,30.59,22.17,46,10.26Z"/></g></svg>                                    
+                                    </div>
+                                </a>
+                                <a class="link-contact" href="mailto:cissealiou378@gmail.com">E.mail</a>
+                            </div>
+                            
+                            <div class="col not-animate card">
+                                <h1>linkedin</h1>
+                                <a href="https://www.linkedin.com/in/aliou-cisse-469a37271/">
+                                    <div class="svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                                            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a class="link-contact" href="https://www.linkedin.com/in/aliou-cisse-469a37271/">linkedin</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="grid">
+                        <div class="col blogs not-animate card">
+                                <h1>whatsapp</h1>
+                                <a href="https://wa.me/760124302">
+                                    <div class="svg">
+                                        <svg height="30" id="Layer_1" style="enable-background:new 0 0 56.693 56.693;" version="1.1" viewBox="0 0 56.693 56.693" width="30" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                            .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                        </style><g><path class="st0" d="M46.3802,10.7138c-4.6512-4.6565-10.8365-7.222-17.4266-7.2247c-13.5785,0-24.63,11.0506-24.6353,24.6333   c-0.0019,4.342,1.1325,8.58,3.2884,12.3159l-3.495,12.7657l13.0595-3.4257c3.5982,1.9626,7.6495,2.9971,11.7726,2.9985h0.01   c0.0008,0-0.0006,0,0.0002,0c13.5771,0,24.6293-11.0517,24.635-24.6347C53.5914,21.5595,51.0313,15.3701,46.3802,10.7138z    M28.9537,48.6163h-0.0083c-3.674-0.0014-7.2777-0.9886-10.4215-2.8541l-0.7476-0.4437l-7.7497,2.0328l2.0686-7.5558   l-0.4869-0.7748c-2.0496-3.26-3.1321-7.028-3.1305-10.8969c0.0044-11.2894,9.19-20.474,20.4842-20.474   c5.469,0.0017,10.6101,2.1344,14.476,6.0047c3.8658,3.8703,5.9936,9.0148,5.9914,14.4859   C49.4248,39.4307,40.2395,48.6163,28.9537,48.6163z"/><path class="st0" d="M40.1851,33.281c-0.6155-0.3081-3.6419-1.797-4.2061-2.0026c-0.5642-0.2054-0.9746-0.3081-1.3849,0.3081   c-0.4103,0.6161-1.59,2.0027-1.9491,2.4136c-0.359,0.4106-0.7182,0.4623-1.3336,0.1539c-0.6155-0.3081-2.5989-0.958-4.95-3.0551   c-1.83-1.6323-3.0653-3.6479-3.4245-4.2643c-0.359-0.6161-0.0382-0.9492,0.27-1.2562c0.2769-0.2759,0.6156-0.7189,0.9234-1.0784   c0.3077-0.3593,0.4103-0.6163,0.6155-1.0268c0.2052-0.4109,0.1027-0.7704-0.0513-1.0784   c-0.1539-0.3081-1.3849-3.3379-1.8978-4.5706c-0.4998-1.2001-1.0072-1.0375-1.3851-1.0566   c-0.3585-0.0179-0.7694-0.0216-1.1797-0.0216s-1.0773,0.1541-1.6414,0.7702c-0.5642,0.6163-2.1545,2.1056-2.1545,5.1351   c0,3.0299,2.2057,5.9569,2.5135,6.3676c0.3077,0.411,4.3405,6.6282,10.5153,9.2945c1.4686,0.6343,2.6152,1.013,3.5091,1.2966   c1.4746,0.4686,2.8165,0.4024,3.8771,0.2439c1.1827-0.1767,3.6419-1.489,4.1548-2.9267c0.513-1.438,0.513-2.6706,0.359-2.9272   C41.211,33.7433,40.8006,33.5892,40.1851,33.281z"/></g></svg>
+                                    </div>
+                                </a>
+                                <a class="link-contact" href="https://wa.me/760124302">whatsapp</a>
+                            </div>
+
+                            <div class="col blogs not-animate card">
+                                <h1>telephone</h1>
+                                <a href="tel:+221760124302">
+                                    <div class="svg">
+                                        <svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="1" id="_1"><path d="M348.73,450.06a198.63,198.63,0,0,1-46.4-5.85c-52.43-12.65-106.42-44.74-152-90.36s-77.71-99.62-90.36-152C46.65,146.75,56.15,99.61,86.69,69.07l8.72-8.72a42.2,42.2,0,0,1,59.62,0l50.11,50.1a42.18,42.18,0,0,1,0,59.62l-29.6,29.59c14.19,24.9,33.49,49.82,56.3,72.63s47.75,42.12,72.64,56.31L334.07,299a42.15,42.15,0,0,1,59.62,0l50.1,50.1a42.16,42.16,0,0,1,0,59.61l-8.73,8.72C413.53,439,383.73,450.06,348.73,450.06ZM125.22,78a12,12,0,0,0-8.59,3.56l-8.73,8.72c-22.87,22.87-29.55,60-18.81,104.49,11.37,47.13,40.64,96.1,82.41,137.86s90.73,71,137.87,82.41c44.5,10.74,81.61,4.06,104.48-18.81l8.72-8.72a12.16,12.16,0,0,0,0-17.19l-50.09-50.1a12.16,12.16,0,0,0-17.19,0l-37.51,37.51a15,15,0,0,1-17.5,2.72c-30.75-15.9-61.75-39.05-89.65-66.95s-51-58.88-66.94-89.63a15,15,0,0,1,2.71-17.5l37.52-37.51a12.16,12.16,0,0,0,0-17.19l-50.1-50.11A12.07,12.07,0,0,0,125.22,78Z"/><path d="M364.75,269.73a15,15,0,0,1-15-15,99.37,99.37,0,0,0-99.25-99.26,15,15,0,0,1,0-30c71.27,0,129.25,58,129.25,129.26A15,15,0,0,1,364.75,269.73Z"/><path d="M428.15,269.73a15,15,0,0,1-15-15c0-89.69-73-162.66-162.65-162.66a15,15,0,0,1,0-30c106.23,0,192.65,86.43,192.65,192.66A15,15,0,0,1,428.15,269.73Z"/></g></svg>
+                                    </div>
+                                </a>
+                                <a class="link-contact" href="tel:+221760124302">76 012 43 02</a>
+                            </div>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Mon-Portfolio 2024. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/menue.js"></script>
+    <script src="../JS/contact.js"></script>
+</body>
+</html>
